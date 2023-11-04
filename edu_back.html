@@ -1,0 +1,376 @@
+<style>
+    /* subMain */
+    .subMain_wrapper {
+        width: 100%;
+        height: 230px;
+    }
+
+    .subMain_img {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/subMainImg03.png") no-repeat center center;
+        background-size: cover;
+        width: 100vw;
+        height: 230px;
+    }
+
+    .subMain_txt01 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+
+    .subMain_txt02 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+
+    .subTtl_wrapper {
+        width: 100%;
+        max-width: 1320px;
+        margin: auto;
+    }
+
+    .subTtl_txt01 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        color: #6A6A6A;
+    }
+
+    .subTtl_txt02 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        color: #131313;
+    }
+
+    /* 학력 */
+    .subTtl_wrapper02 {
+        width: 100%;
+        max-width: 1320px;
+        height: 40px;
+        margin: auto;
+    }
+
+    .subTtl_txt03 {
+        color: #315F99;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .img01{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img03_1.png") no-repeat center center;
+        background-size: cover;
+        width: 387px;
+        height: 516px;
+    }
+
+    .img02{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img03_2.png") no-repeat center center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        margin-left: 400px;
+        margin-top: 74px;
+    }
+
+    .img03{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img01_3.png") no-repeat center center;
+        background-size: cover;
+        width: 24px;
+        height: 8px;
+    }
+
+    .img04{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img03_3.png") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 674px;
+    }
+
+    .box01{
+        width: 100%;
+        max-width: 1320px;
+        min-height: 666px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box02{
+        width: 100%;
+        max-width: 760px;
+        height: 666px;
+    }
+    .box03{
+        width: 100%;
+        max-width: 760px;
+        min-height: 476px;
+        background: #F9F9F9;
+        border-radius: 10px;
+        display: flex;
+    }
+    .txt01{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 50px;
+        color: #131313;
+    }
+    .txt02{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #4AA3B9;
+    }
+    .txt03{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #315F99;
+    }
+    .txt04{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 34px;
+        color: #464646;
+    }
+    .hp_mt40{
+        margin-top: 40px;
+    }
+    /* 주요약력 */
+    .box04{
+        margin: auto;
+        display: flex;
+        width: 700px;
+        height: 534px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .txt05{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 50px;
+        color: #315F99;
+    }
+    .txt06{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 44px;
+        color: #464646;
+    }
+    /* 하단약력 */
+    .box05{
+        width: 100%;
+        max-width: 1320px;
+        min-height: 706px;
+        margin: auto;
+        background: #F9F9F9;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .txt07 ul li{
+        color: #464646;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        list-style: disc;
+    }
+    .box06{
+        height: 500px;
+    }
+
+    /* tablet */
+    @media screen and (max-width:992px) {}
+
+    /* mobile */
+    @media screen and (max-width:578px) {
+        .mFontSize01{
+            font-size: 20px;
+        }
+
+        .mFontSize02{
+            font-size: 14px;
+        }
+
+        .mFontSize03{
+            font-size: 18px;
+        }
+
+        .mMargon10{
+            margin: 0 10px;
+        }
+
+        .mMargon20{
+            margin: 0 20px;
+        }
+
+        .mMargonAuto20{
+            margin: auto 35px !important;
+        }
+
+        .mMB20{
+            margin-bottom: 20px;
+        }
+
+        .mJCE{
+            justify-content: flex-end;
+        }
+
+        .mJCC{
+            justify-content: center;
+        }
+
+        .mDPN{
+            display: none;
+        }
+
+        .mMarginL20{
+            margin-left: 20px !important;
+        }
+
+        .mMarginL100{
+            margin-left: 30% !important;
+        }
+
+        .mTxtCen{
+            text-align: center;
+        }
+
+        .mMarginR0{
+            margin-right: 0 !important;
+        }
+
+
+        .mMarginT50{
+            margin-top: 50px !important;
+        }
+
+        .txt07 ul li{
+            font-size: 14px;
+        }
+
+        .img01{
+            margin-right : 0px !important;
+        }
+
+
+
+    }
+
+    /* small mobile */
+    @media screen and (max-width:400px) {
+        .mMarginL100{
+            margin-left: 15% !important;
+        }
+    }
+</style>
+
+
+<!-- subMainImg -->
+<div class="subMain_wrapper subMain_img" style="margin-top: 20px;"></div>
+
+<div class="subTtl_wrapper hp_pt31">
+    <div class="subTtl_txt01">병원장 스토리<span class="subTtl_txt02 hp_pr10 hp_pl10">></span><span
+            class="subTtl_txt02">학력&약력</span></div>
+</div>
+
+<!-- 학력 -->
+<div class="subTtl_wrapper02 hp_mt30">
+    <div class="subTtl_txt03">학력&약력</div>
+</div>
+
+<div class="box01" style="margin: 70px auto;">
+    <div class="img01" style="margin-right: 100px;"></div>
+    <div class="box02">
+        <div class="img03 mMarginL20"></div>
+        <div class="txt01 mFontSize01 mMarginL20" style="margin: 40px 0 12px;">이상철</div>
+        <div class="txt02 mFontSize02 mMarginL20" style="margin-bottom: 50px;">서울대학교 <strong>의과대학 명예교수</strong></div>
+        <div class="box03">
+            <div class="" style="margin: 50px;">
+                <div class="txt03 hp_mb20 mFontSize02">학력사항</div>
+                <div class="txt04 mFontSize02">경기 중학교, 경기 고등학교 졸업</div>
+                <div class="txt04 mFontSize02">서울대학교 의과대학 졸업</div>
+                <div class="txt04 mFontSize02">서울대학교석사 및 박사 대학원 졸업 – 최종학위 : 의학박사</div>
+                <div class="txt03 hp_mb20 hp_mt40 mFontSize02">수련 및 연수 사항</div>
+                <div class="txt04 mFontSize02">서울대학교 병원 인턴 수료</div>
+                <div class="txt04 mFontSize02">서울대학교병원 마취통증의학과 전공의 수료</div>
+                <div class="txt04 mFontSize02">미국 UCLA, Texas Tech University, UMDNJ, Yale University, 일본 관동체신병원, 스위스</div>
+                <div class="txt04 mFontSize02">로잔 통증센터 등 연수</div>
+            </div>
+            <div class="img02 mMarginL100"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 주요약력 -->
+<div class="img04">
+    <div style="display: flex; height: 100%;">
+        <div class="box04 mTxtCen mMargonAuto20">
+            <div class="img03"></div>
+            <div class="txt05 mFontSize03" style="margin: 40px 0;">주요 약력</div>
+            <div class="txt06 mFontSize02"><strong>서울대학교 의과대학 마취통증의학교</strong>실 주임교수 및 서울대병원 마취통증의학과장 역임</div>
+            <div class="txt06 mFontSize02"><strong>현 서울대학교 마취통증의과대학</strong> 명예교수</div>
+            <div class="txt06 mFontSize02"><strong>대통령자문의</strong> 10년 역임</div>
+            <div class="txt06 mFontSize02"><strong>세계통증전문의학회</strong> 회장 역임</div>
+            <div class="txt06 mFontSize02">국내 최초 세계통증학회 인정 “<strong>중재적 시술전문의</strong>” 획득</div>
+            <div class="txt06 mFontSize02"><strong>국내 최초 척수자극술, 약물펌프이식술, 고주파열응고술</strong> 시술</div>
+            <div class="txt06 mFontSize02"><strong>미국 하버드의대 (MGH)</strong> 초청 강의</div>
+            <div class="txt06 mFontSize02"><strong>일본 동경대학</strong> 초청 강의 2회</div>
+            <div class="txt06 mFontSize02"><strong>200회 이상의 해외학회</strong> 초청 강의 및 치료 시연</div>
+        </div>
+    </div>
+</div>
+
+<!-- 하단약력 -->
+<div class="box05">
+    <div class="box06 mMargonAuto20">
+        <div class="txt05 mFontSize03" style="margin-bottom: 30px;">국내 약력</div>
+        <div class="txt07 mFontSize02">
+            <ul>
+                <li><strong>현 대한척추통증연구회 명예회장</strong></li>
+                <li>대한통증학회 회장 역임</li>
+                <li>대한척추통증학회 회장 역임</li>
+                <li>대한통증연구학회 회장 역임</li>
+                <li>대한IMS학회 회장 역임</li>
+                <li>대한마취통증의학회 이사장 역임</li>
+                <li>대한통합의학회 이사장 역임</li>
+                <li>서울대학교 보완통합의학 연구소 소장 역임</li>
+                <li>서울대병원 의학연구원 만성통증통합의학센터 센터장 역임</li>
+                <li>광혜병원 면역통증센터 센터장 역임</li>
+                <li>대한체열학회 부회장 역임</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box06 mMargonAuto20 mMarginT50">
+        <div class="txt05 mFontSize03" style="margin-bottom: 30px;">해외 약력</div>
+        <div class="txt07 mFontSize02">
+            <ul>
+                <li><strong>현 세계통증학회 대한민국 지부장</strong></li>
+                <li><strong>현 대만통증학회 명예회원</strong></li>
+                <li><strong>현 대만 마취통증의학회지 해외 편집인</strong></li>
+                <li>아오 (아시아 & 오세아니아) 통증학회연합회 회장 역임</li>
+                <li>세계통증학회 동북아시아지회 회장, 자문위원회 위원 및 통증전문의자격시험관 역임</li>
+                <li>중국 양주대학교 의과대학 특청교수 역임</li>
+                <li>중국 청도중앙병원 초청교수 역임</li>
+                <li>중국 마취통증의학회지, 임상통증학회지, 재활의학회지 해외편집인 역임</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class=""></div>
+<div class="hp_mt290"></div>
