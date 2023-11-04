@@ -1,0 +1,356 @@
+<title>대상포진</title>
+
+    <style>
+        /* subMain */
+        .subMain_wrapper {
+            width: 100%;
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .subMain_img {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img05_1.png") no-repeat center center;
+            background-size: cover;
+            width: 100vw;
+            height: 230px;
+        }
+
+        .subTtl_wrapper {
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+        }
+
+        .subTtl_txt01 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            color: #6A6A6A;
+        }
+
+        .subTtl_txt02 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            color: #131313;
+        }
+
+        /* 대상포진 */
+        .subTtl_wrapper02 {
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subTtl_txt03 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+            color: #315F99;
+            text-align: center;
+        }
+
+        .img03 {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img01_3.png") no-repeat center center;
+            background-size: cover;
+            width: 24px;
+            height: 8px;
+        }
+
+        .txt01 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+            color: #464646;
+        }
+
+        .box01 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            min-height: 470px;
+        }
+
+        .img01 {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img05_2.png") no-repeat center center;
+            background-size: cover;
+            width: 948px;
+            height: 470px;
+            right: 0;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .txt02 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            color: #464646;
+            z-index: 2;
+        }
+
+        .txt03 {
+            font-weight: 700;
+            color: #315F99;
+        }
+
+        /* 원인 */
+        .box02 {
+            width: 100%;
+            max-width: 1320px;
+            height: auto;
+            margin: auto;
+        }
+
+        .txt04 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+            color: #315F99;
+        }
+
+        .txt05 {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            color: #315F99;
+        }
+
+        .txt06 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            color: #464646;
+        }
+
+        /* 증상 */
+        .box03 {
+            width: 100%;
+            max-width: 1320px;
+            height: auto;
+            margin: auto;
+        }
+
+        .txtBox01 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .txtBox02 {
+            width: 720px;
+            height: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .img02 {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img05_3.png") no-repeat center center;
+            background-size: cover;
+            width: 536px;
+            height: 360px;
+        }
+        /* 치료 */
+        .img04 {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img05_4.png") no-repeat center center;
+            background-size: contain;
+            width: 401px;
+            height: 401px;
+        }
+        /* 예방방법 */
+        .img05 {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img05_5.png") no-repeat center center;
+            background-size: cover;
+            width: 872px;
+            height: 262px;
+        }
+        .img06 {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img05_6.png") no-repeat center center;
+            background-size: cover;
+            width: 353px;
+            height: 176px;
+        }
+
+        @media screen and (max-width : 578px) {
+            .box01, .box02, .box03{
+                padding: 10px !important;
+            }
+
+            .box03{
+                margin-bottom: 200px;
+            }
+
+            .img01{
+                right: 0px;
+                position: relative;
+            }
+            .img02{
+                margin-right : 0;
+            }
+            
+            .txtBox02{
+                margin-top : 135px;
+            }
+
+            .vaccine{
+                display : block !important;
+            }
+
+            .vaccine > div:first-child{
+                width : 100% !important;
+            }
+
+            .img05{
+                margin-left: -340px !important; 
+            }
+        }
+    </style>
+
+
+
+
+ <!-- subMainImg -->
+    <div class="subMain_wrapper subMain_img" style="margin-top: 20px;"></div>
+
+    <div class="subTtl_wrapper hp_pt31">
+        <div class="subTtl_txt01">치료법&적응증<span class="subTtl_txt02 hp_pr10 hp_pl10">></span><span
+                class="subTtl_txt02">대상포진</span></div>
+    </div>
+
+    <!-- 대상포진 -->
+    <div class="subTtl_wrapper02">
+        <div class="subTtl_txt03">대상포진</div>
+        <div class="img03" style="margin-top: 60px; margin-bottom: 80px;"></div>
+        <div class="txt01" style="margin: auto;">참을 수 없는 통증의 주범 <span style="color: #315F99;">대상포진</span></div>
+    </div>
+
+    <div class="box01">
+        <div class="img01"></div>
+        <div class="txt02" style="padding: 50px 0 10px;"><span class="txt03">대상포진</span>은 수두 - 대상포진 바이러스가 <span
+                class="txt03">몸 속에 잠복상태로 존재하고 있다가 다시 활성화되면서 발생하는 질병</span>입니다.</div>
+        <div class="txt02" style="">보통은 수일 사이에 피부에 발진과 특징적인 물집 형태의 병변이 나타나고 해당 부위에 통증이 동반됩니다.</div>
+        <div class="txt02" style="padding: 40px 0 10px;">대상포진은 <span class="hp_fw700">젊은 사람에서는 드물게 나타나고 대개는 면역력이 떨어지는
+                60세 이상의 성인에게서 발병</span>합니다.</div>
+        <div class="txt02" style="">인간 면역결핍바이러스(HIV) 감염 환자 또는 장기이식이나 항암치료를 받아 면역기능이 떨어진 환자에서 많이 발생하며,</div>
+        <div class="txt02" style="padding: 10px 0 40px;">이 경우에는 젊은 나이에도 발병할 수 있습니다.</div>
+        <div class="txt02" style="">대부분의 경우 병적인 증상은 피부에 국한되어 나타나지만, </div>
+        <div class="txt02" style="padding: 10px 0">면역력이 크게 떨어져있는 환자에서는 전신에 퍼져서 사망에 이를 수도 있습니다.</div>
+        <div class="txt02" style="color: #4AA3B9 !important;">* 발병위치 : 피부, 신경계</div>
+    </div>
+
+    <!-- 원인 -->
+    <div class="box02" style="padding-top: 80px;">
+        <div class="img03" style="margin: 0 0 50px;"></div>
+        <div class="txt04">원인</div>
+        <div class="txt05" style="padding: 30px 0;">원인 병원체는 수두-대상포진 바이러스입니다.</div>
+        <div class="txt06">
+            이는 어린이가 흔히 걸리는 수두의 원인체와 동일한 바이러스입니다. 소아기에 수두-대상포진 바이러스에 한번 감염되면 수두를 앓고 난 후에도 바이러스가 몸속에서 완전히 사라지지 않습니다. 체내에
+            남아 있는 수두 바이러스는 신경을 따라 이동하여 신경절에 잠복해 있습니다. 이 경우에는 체내에 바이러스가 있더라도 사람이 이를 느끼지 못하며 겉으로 드러나는 병적인 증상도 없습니다.
+        </div>
+        <div class="txt06" style="padding-top: 30px;">
+            그러나 신체의 면역력이 약해지면 신경절에 잠복해 있던 수두-대상포진 바이러스가 신경을 타고 다시 피부로 내려와 그 곳에서 염증을 일으키거나, 심하면 염증이 전신으로 퍼질 수도 있습니다. 이러한
+            증상의 원인이 되는 바이러스는 수두 바이러스와 동일하지만 이 경우에는 대상포진 바이러스라고 부르기도 하며, 최근에는 수두-대상포진 바이러스라고 묶어서 부릅니다.
+        </div>
+    </div>
+
+    <!-- 증상 -->
+    <div style="background: #F9F9F9; margin-top: 50px;">
+        <div class="box03" style="padding: 60px 0;">
+            <div class="img03" style="margin:0 0 50px;"></div>
+            <div class="txt04">증상</div>
+            <div class="txt06" style="padding: 30px 0 40px;">대상포진은 신경절에 <strong>잠복상태로 있던 수두 바이러스가 재활성화 되면서 발생</strong>하며 피부의 병적인 증상은 신경근의 지각신경이 분포하는 부위에 국한되어 나타납니다.
+            </div>
+            <div class="txtBox01">
+                <div class="img02 hp_mr24"></div>
+                <div class="txtBox02">
+                    <div class="txt06">
+                        이 부위에 심한 통증과 감각이상이 동반되며 붉은 반점이 신경을 따라 나타난 후<br>
+                        여러 개의 물집이 무리를 지어 나타납니다. 수포(물집)는 수두 환자에서 나타나는 것과<br>
+                        조직검사 결과가 동일합니다.
+                    </div>
+                    <div class="txt06">
+                        수포는 10~14일 동안 변화하는데, 고름이 차면서 탁해지다가 딱지로 변하게 됩니다.<br>
+                        접촉 등에 의해 물집이 터지면 궤양이 형성될 수 있으며, 보통 2주 정도 지나면 딱지가 생기면서<br>
+                        증상이 좋아집니다. 피부의 병적인 증상이 모두 좋아진 후에도 해당 부위가 계속 아프기도<br>
+                        하는데, 이러한 대상포진성 통증은 노인 환자의 약 30%에서 나타나고<br>
+                        마약성 진통제를 사용해야 할 정도로 통증이 심한 경우도 있습니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 진단 / 검사 -->
+    <div class="box02" style="padding-top: 80px;">
+        <div class="img03" style="margin: 0 0 50px;"></div>
+        <div class="txt04">진단 / 검사</div>
+        <div class="txt06" style="padding: 30px 0 0">
+            대상포진은 <strong>피부에 나타나는 병적인 변화가 매우 특징적이므로 증상을 관찰하여 임상적으로 진단</strong>할 수 있습니다. 그러나 면역억제 환자에서는 피부의 병적인 변화가 특징적이지 않을 수 있고 정상인에서도 그 모양이 전형적인 형태로 나타나지 않는 경우가 있는데, 이때는 진단이 늦어질 수 있습니다. 수포액을 세포 배양하여 바이러스를 검출하여 이를 확인할 수도 있으며, 바이러스의 핵산을 검출하는 중합효소연쇄반응(PCR; polymerase chain reaction)도 임상에서 사용되고 있습니다. 이러한 검사들은 일반적인 환자들에서는 검사 비용에 비해 그 유용성이 적기 때문에 잘 시행하지 않지만, 입원환자의 경우에는 검사가 필요할 수 있습니다.
+        </div>
+    </div>
+
+    <!-- 치료 -->
+    <div style="background: #F9F9F9; margin-top: 50px;">
+        <div class="box03" style="padding: 60px 0; display: flex; flex-direction: column">
+            <div class="img03" style="margin: auto;"></div>
+            <div class="txt04" style="margin: auto; width: 100px; text-align: center; padding: 50px 0;">치료</div>
+            <div class="txt06 hp_fw700" style="padding-top: 30px;">항바이러스 치료제의 투여가 급성기 대상포진 치료의 표준이 되고 있습니다. </div>
+            <div class="txt06" style="padding-top: 30px;">
+                이는 바이러스의 복제 억제 및 확산 기간의 단축, 발진 치유 촉진, 급성 통증의 기간과 정도를 감소시키는 효과가 있습니다. 또한 항바이러스제의 치료가 바이러스의 복제를<br>
+                억제하여 대상포진 후 신경통의 주요 원인이 될 수 있는 바이러스에 의한 신경 손상의 정도를 감소시킬 수 있습니다. 
+            </div>
+            <div class="txt06" style="padding-top: 30px;">
+                전신 또는 국소적인 스테로이드의 사용을 고려해 볼 수 있습니다. 통증에 대해서는 비스테로이드성 소염진통제, 마약성 진통제 등의 사용을 고려할 수 있고<br>
+                항경련제와 항우울제의 사용이 도움이 될 수 있습니다. 약물 치료로 충분한 효과를 얻지 못한 경우 신경 블록을 시행하는 것이 증상의 조절에 도움이 될 수 있습니다.
+            </div>
+            <div style="display: flex; justify-content: flex-end; margin-top: -400px;">
+                <div class="img04" style=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 경과 / 합병증 -->
+    <div class="box02" style="padding-top: 80px;">
+        <div class="img03" style="margin: 0 0 50px;"></div>
+        <div class="txt04">경과 / 합병증</div>
+        <div class="txt06" style="padding: 30px 0 30px">
+            치료를 시작하면 빠르게 치유되지만, 피부의 병적인 증상을 잘 관리하지 않으면 2차 세균감염이 발생하여 곪을 수 있습니다. 노인이나 면역억제 환자의 경우 피부의 이상 증상이 모두 좋아져도 포진성 통증이 남는 경우가 흔히 있으며 면역기능이 정상인 환자의 경우에도 7.9%에서 포진성 통증이 나타날 수 있습니다. 눈 주변에 대상포진이 생기는 경우에는 홍채염이나 각막염을 일으켜 실명할 수 있고, 바이러스가 뇌수막 까지 침투하면 뇌수막염으로 진행되기도 합니다.
+        </div>
+        <div class="txt06">
+            면역억제환자에서는 대상포진이 지각신경이 분포하는 부위에 국한되지 않고 전신의 피부에 나타나기도 하며, 뇌수막염이나 뇌염으로 진행하거나 간염이나 폐렴을 일으켜 사망에 이르는 경우도 있습니다. 증상이 좋아지더라도 바이러스는 잠복상태로 몸속에 계속 존재하기 때문에 바이러스가 재활성화 되면 다시 대상포진이 발생할 수 있습니다.
+        </div>
+    </div>
+
+    <!-- 예방방법 -->
+    <div class="box03 vaccine" style="display: flex; padding-top: 100px;">
+        <div class="" style="width: 1100px; z-index: 2;">
+            <div class="img03"></div>
+            <div class="txt04" style="padding: 50px 0 30px;">예방방법</div>
+            <div class="txt06">대상포진 예방백신이 개발되어 사용되고 있으며, 60세 이상의 성인에서 1회 접종이 추천됩니다.</div>
+            <div class="txt06" style="color: #9f9f9f;">(서울대학교병원 의학정보, 서울대학교병원 발췌)</div>
+        </div>
+        <div class="img05" style="margin-left: -652px; z-index: 0;"></div>
+    </div>
+
+    <div style="margin: 160px 0 130px;">
+        <div class="img06 hp_mAuto"></div>
+    </div>
+
+<div class="hp_mt290"></div>
