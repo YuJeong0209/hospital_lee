@@ -1,0 +1,585 @@
+        <style>
+        /* subMain */
+        .subMain_wrapper {
+            width: 100%;
+            height: 230px;
+        }
+
+        .subMain_img {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/subMainImg.png") no-repeat center center;
+            /* background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/subMainImg.png") no-repeat center center; */
+            background-size: cover;
+            /* width: 100vw; */
+            height: 230px;
+        }
+
+        .subMain_txt01 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+        }
+
+        .subMain_txt02 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+        }
+
+        .subTtl_wrapper {
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+        }
+
+        .subTtl_txt01 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            color: #6A6A6A;
+        }
+
+        .subTtl_txt02 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            color: #131313;
+        }
+
+        /* 비전 */
+        .subTtl_wrapper02 {
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        .subTtl_txt03 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+            color: #315F99;
+            text-align: center;
+        }
+
+        .imgBox01{
+            width: 100%;
+            max-width: 1320px;
+            min-height: 350px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .img01{
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img02_1.png") no-repeat center center;
+            background-size: contain;
+            width: 646px;
+            height: 350px;
+        }
+        .img02{
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img02_2.png") no-repeat center center;
+            background-size: contain;
+            width: 646px;
+            height: 350px;
+        }
+        .img03{
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img01_3.png") no-repeat center center;
+            background-size: cover;
+            width: 24px;
+            height: 8px;
+        }
+        .txtBox01{
+            /* width: 592px; */
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+        }
+        .txt01{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 50px;
+            letter-spacing: -0.02em;
+            color: #315F99;
+        }
+        .txt02{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            color: #464646;
+        }
+
+        .txtBox02{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .hp_txtEnd{
+            text-align: end;
+        }
+
+        /* 핵심가치 */
+        .txtBox03{
+            width: 100%;
+            min-height: 772px;
+            height: auto;
+            background: #f9f9f9;
+        }
+        .hp_mt20{
+            margin-top: 20px;
+        }
+        .hp_mt30{
+            margin-top: 30px;
+        }
+        .hp_mt40{
+            margin-top: 40px;
+        }
+        .txtBox04{
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+        }
+        .txtBox05{
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .txtBox06{
+            width: 244px;
+            height: 524px;
+            border: 1px solid rgba(49, 95, 153, 0.1);
+            border-radius: 500px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .img04{
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img02_3.png") no-repeat center center;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+        }
+        .img05{
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img02_4.png") no-repeat center center;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+        }
+        .img06{
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img02_5.png") no-repeat center center;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+        }
+        .img07{
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img02_6.png") no-repeat center center;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+        }
+        .img08{
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img02_7.png") no-repeat center center;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+        }
+        .txt03{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            color: #4AA3B9;
+        }
+        .txt04{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            color: #5C5C5C;
+            height: 240px;
+        }
+        .bg01{
+            width: 20px;
+            height: 170px;
+            background: #315F99;
+        }
+
+        /* ci */
+        .txtBox07{
+            margin: auto;
+            width: 90px;
+            text-align: center;
+        }
+        .txt05{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: #315F99;
+        }
+        .m_mAuto {
+        margin: auto;
+        }
+        .hp_mt80{
+            margin-top: 80px;
+        }
+
+        .hp_mr24{
+            margin-right: 24px;
+        }
+
+        .txtBox08{
+            width: 100%;
+            max-width: 1320px;
+            min-height: 276px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            
+        }
+        .txtBox09{
+            width: 100%;
+            max-width: 648px;
+            height: 276px;
+            background: #F9F9F9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 50px;
+        }
+        .txt06{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 44px;
+            color: #315F99;
+        }
+        .txt07{
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 44px;
+            color: #464646;
+        }
+
+        /* 기존 */
+        .subTtl_wrapper03 {
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+        }
+
+        .subTtl_txt04 {
+            font-size: 18px;
+            line-height: 30px;
+            color: #454545;
+            font-weight: 500;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .subBox_wrapper02 {
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .subBox_inner02 {
+            width: 100%;
+            min-width: 214px;
+            max-width: 238px;
+            height: 295px;
+            background: #1d609e;
+            border-radius: 10px;
+            padding: 33px 3px 3px;
+        }
+
+        .subBox_inner03 {
+            width: 100%;
+            min-width: 214px;
+            max-width: 238px;
+            height: 295px;
+            background: #5b97ce;
+            border-radius: 10px;
+            padding: 33px 3px 3px;
+        }
+
+        .subBox_txtBox {
+            width: 100%;
+            height: 259px;
+            background: #fff;
+            padding: 0 14px;
+            text-align: center;
+            border-radius: 8px;
+            line-height: 28px;
+            color: #686868;
+        }
+
+        .hp_txtC1d609e {
+            color: #1d609e;
+            font-size: 18px !important;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .hp_txtC5b97ce {
+            color: #5b97ce;
+            font-size: 18px !important;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .hp_bdBb9b9b9 {
+            border-bottom: 1px solid #b9b9b9;
+        }
+
+        .subBox_wrapper03 {
+            width: 100%;
+            max-width: 1280px;
+            margin: auto;
+        }
+
+        .subBox_txt04 {
+            font-size: 15px;
+            line-height: 28px;
+            color: #686868;
+        }
+
+        .subBox_wrapper04 {
+            width: 100%;
+            max-width: 1320px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .subBox_img01 {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/subImg01.jpg") no-repeat center center;
+            background-size: contain;
+            max-width: 536px;
+            width: 100%;
+            min-width: 375px;
+            height: 532px;
+        }
+
+        .subBox_img02 {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/subImg02.jpg") no-repeat center center;
+            background-size: contain;
+            max-width: 536px;
+            width: 100%;
+            min-width: 375px;
+            height: 532px;
+        }
+        /* 기존 */
+
+        /* tablet */
+        @media screen and (max-width:992px) {
+            .txtBox08{
+                flex-wrap: wrap;
+            }
+        }
+
+        /* mobile */
+        @media screen and (max-width:578px) {
+            .mFontSize01{
+                font-size: 20px;
+            }
+
+            .mFontSize02{
+                font-size: 14px;
+            }
+
+            .mFontSize03{
+                font-size: 18px;
+            }
+
+            .mMargon10{
+                margin: 0 10px;
+            }
+
+            .mMargon20{
+                margin: 0 20px;
+            }
+
+            .mMB20{
+                margin-bottom: 20px;
+            }
+
+            .mJCE{
+                justify-content: flex-end;
+            }
+
+            .mJCC{
+                justify-content: center;
+            }
+
+            .mDPN{
+                display: none;
+            }
+
+            .mHp_mr24{
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .txtBox09{
+                padding: 0 20px;
+            }
+        }
+
+        /* small mobile */
+        @media screen and (max-width:400px) {}
+    </style>
+
+
+<!-- subMainImg -->
+    <div class="subMain_wrapper subMain_img" style="margin-top: 20px;"></div>
+
+    <div class="subTtl_wrapper hp_pt31">
+        <div class="subTtl_txt01">의원 소개<span class="subTtl_txt02 hp_pr10 hp_pl10">></span><span class="subTtl_txt02">병원
+                비전 & CI</span></div>
+    </div>
+
+    <!-- 비전 -->
+    <div class="subTtl_wrapper02">
+        <div class="subTtl_txt03">병원 비전 & CI</div>
+    </div>
+
+    <div class="imgBox01">
+        <div class="img01"></div>
+        <div class="txtBox01 mMargon20">
+            <div class="img03"></div>
+            <div class="txt01 hp_mt30 hp_mb30 mFontSize03">사명</div>
+            <div class="txt02 mFontSize03">이상철 마취통증의학과의원은 국내 및 해외에 있는</div>
+            <div class="txt02 mFontSize03">통증 환자들을 위하여 <strong>가장 안전하고 혁신적이면서</strong></div>
+            <div class="txt02 mFontSize03"><strong>적합한 방법</strong>으로 통증을 최대한 줄이기 위해 노력하겠습니다.</div>
+        </div>
+    </div>
+    <div class="imgBox01 hp_mt20 mJCE">
+        <div class="txtBox01 hp_txtEnd mMargon20">
+            <div class="txtBox02"><div class="img03"></div></div>
+            <div class="txt01 hp_mt30 hp_mb30 mFontSize03">비전</div>
+            <div class="txt02 mFontSize03"><strong>명확한 진단</strong>과 <strong>최상의 치료</strong>로</div>
+            <div class="txt02 mFontSize03">통증 분야에서 최고가 되기 위해 전진하겠습니다.</div>
+        </div>
+        <div class="img02"></div>
+    </div>
+    
+    <!-- 핵심가치 -->
+    <div class="txtBox03 hp_mt40">
+        <div class="txtBox04 hp_pt70 mMargon20">
+            <div class="img03"></div>
+            <div class="txt01 hp_mt30">핵심가치</div>
+        </div>
+
+        <div class="txtBox05 hp_pt40 mJCC">
+            <div class="txtBox06 mMB20">
+                <div class="img04"></div>
+                <div class="txt03 hp_mt20 hp_mb20">치료</div>
+                <div class="txt04 hp_txtCen">
+                    <div class="">우리는 최고 수준의</div>
+                    <div class="">치료 방법을 유지하고,</div>
+                    <div class="">지속적으로 치료결과를</div>
+                    <div class="">측정하며 개선함으로써</div>
+                    <div class="">우리의 목표를</div>
+                    <div class="">달성합니다.</div>
+                </div>
+            </div>
+            <div class="bg01 mDPN"></div>
+            <div class="txtBox06 mMB20">
+                <div class="img05"></div>
+                <div class="txt03 hp_mt20 hp_mb20">혁신</div>
+                <div class="txt04 hp_txtCen">
+                    <div class="">우리는 변화를 두려워하지</div>
+                    <div class="">않으며, 안전하고 새로운</div>
+                    <div class="">방법을 장려하면서, 목표를</div>
+                    <div class="">달성할 수 있는 보다 효율적</div>
+                    <div class="">이고 효과적인 방법을 지속</div>
+                    <div class="">적으로 추구합니다.</div>
+                </div>
+            </div>
+            <div class="bg01 mDPN"></div>
+            <div class="txtBox06 mMB20">
+                <div class="img06"></div>
+                <div class="txt03 hp_mt20 hp_mb20">협력</div>
+                <div class="txt04 hp_txtCen">
+                    <div class="">우리는 사명 발전과</div>
+                    <div class="">환자와 가족에게 정보를</div>
+                    <div class="">제공하기 위해 지식을</div>
+                    <div class="">협력하고 공유합니다.</div>
+                </div>
+            </div>
+            <div class="bg01 mDPN"></div>
+            <div class="txtBox06 mMB20">
+                <div class="img07"></div>
+                <div class="txt03 hp_mt20 hp_mb20">봉사</div>
+                <div class="txt04 hp_txtCen">
+                    <div class="">우리는</div>
+                    <div class="">안락함과 편의성에 대한</div>
+                    <div class="">환자와 가족의 기대를</div>
+                    <div class="">뛰어넘기 위해</div>
+                    <div class="">노력합니다.</div>
+                </div>
+            </div>
+            <div class="bg01 mDPN"></div>
+            <div class="txtBox06 mMB20">
+                <div class="img08"></div>
+                <div class="txt03 hp_mt20 hp_mb20">기밀유지</div>
+                <div class="txt04 hp_txtCen">
+                    <div class="">우리는 정직, 기밀유지,</div>
+                    <div class="">신뢰, 존중 및 투명성에 대한</div>
+                    <div class="">약속으로 높은 도덕 원칙과</div>
+                    <div class="">치료 전문 표준을</div>
+                    <div class="">준수합니다.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CI -->
+    <div class="txtBox07 hp_mt80">
+        <div class="img03 m_mAuto"></div>
+        <div class="txt05 hp_mt40">CI</div>
+    </div>
+
+    <div class="txtBox08 hp_mt70 hp_mb50">
+        <div class="txtBox09 hp_mr24 mHp_mr24">
+            <div class="txt06 mFontSize03">로고 형상화</div>
+            <div class="txt07 mFontSize03">현 서울대학교 마취통증의과대학 명예교수인 이상철 병원장의</div>
+            <div class="txt07 mFontSize03">이니셜을 가지고 만든 것으로서, 위에서부터 신경세포, 뼈,</div>
+            <div class="txt07 mFontSize03">관절을 형상화했습니다.</div>
+        </div>
+        <div class="txtBox09">
+            <div class="txt06 mFontSize03">현 로고 의미</div>
+            <div class="txt07 mFontSize03">아픈 통증 환자들이 이상철 병원장으로부터 치료를 받은 후</div>
+            <div class="txt07 mFontSize03">완치되어 병원문을 박차고 뛰어 나가길 바라는 마음에서</div>
+            <div class="txt07 mFontSize03">만들게 되었습니다.</div>
+        </div>
+    </div>
+
+    <div class="subBox_wrapper04">
+        <div class="">
+            <div class="subBox_img01"></div>
+        </div>
+        <div class="">
+            <div class="subBox_img02"></div>
+        </div>
+    </div>
+
+    <div class=""></div>
+    <div class="hp_mt290"></div>
