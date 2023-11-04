@@ -1,0 +1,1053 @@
+<style>
+    /* subMain */
+    .subMain_wrapper {
+        width: 100%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subMain_img {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img05_1.png") no-repeat center center;
+        background-size: cover;
+        width: 100vw;
+        height: 230px;
+    }
+
+    .subTtl_wrapper {
+        width: 100%;
+        max-width: 1320px;
+        margin: auto;
+    }
+
+    .subTtl_txt01 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        color: #6A6A6A;
+    }
+
+    .subTtl_txt02 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        color: #131313;
+    }
+
+    /* 시술 */
+    .subTtl_wrapper02 {
+        width: 100%;
+        max-width: 1320px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subTtl_txt03 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #315F99;
+        text-align: center;
+    }
+
+    .img03 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img01_3.png") no-repeat center center;
+        background-size: cover;
+        width: 24px;
+        height: 8px;
+    }
+
+    .txt01 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #464646;
+    }
+
+    /* tabBox */
+    .tabBox01 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    ul.tabs {
+        width: 1320px;
+        margin: 0 auto;
+        padding: 0px;
+        list-style: none;
+    }
+
+    ul.tabs li {
+        background: none;
+        color: #9F9F9F;
+        display: inline-block;
+        padding: 10px 15px 36px;
+        cursor: pointer;
+        width: 430px;
+        border-bottom: 1px solid #e6e6e6;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+    }
+
+    ul.tabs li.current {
+        color: #315F99;
+        border-bottom: 4px solid #315f99;
+        font-weight: 700;
+    }
+
+    .tab-content {
+        display: none;
+        padding: 15px;
+    }
+
+    .tab-content.current {
+        display: inherit;
+    }
+
+    /* <!-- tab1_경피적경막외강신경성형술(추간공확장수술포함) --> */
+    /* 비수술 */
+    .txt02 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #315F99;
+    }
+
+    .img01 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_1.png") no-repeat center center;
+        background-size: cover;
+        width: 562px;
+        height: 228px;
+    }
+
+    .imgBox01 {
+        width: 1320px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 텍스트 */
+    .txtBox01 {
+        background: #F9F9F9;
+        height: auto;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .txt03 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #464646;
+    }
+
+    /* 척추협착 풍선확장술의 대상 */
+    .box01 {
+        width: 100%;
+        max-width: 1320px;
+        margin: auto;
+        height: auto;
+    }
+
+    .imgBox02 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .txtBox02 {
+        display: flex;
+        align-items: center;
+    }
+
+    .img02 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_2.png") no-repeat center center;
+        background-size: cover;
+        width: 312px;
+        height: 220px;
+    }
+
+    /* 숫자 이미지 */
+    .img04 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_6.png") no-repeat center center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+
+    .img05 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_7.png") no-repeat center center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+
+    .img06 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_8.png") no-repeat center center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+
+    .img07 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_9.png") no-repeat center center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+
+    .img08 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_10.png") no-repeat center center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+
+    .img09 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_11.png") no-repeat center center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* 숫자 이미지 끝 */
+    .img10 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_3.png") no-repeat center center;
+        background-size: cover;
+        width: 312px;
+        height: 220px;
+    }
+
+    .img11 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_4.png") no-repeat center center;
+        background-size: cover;
+        width: 312px;
+        height: 220px;
+    }
+
+    .img12 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_5.png") no-repeat center center;
+        background-size: cover;
+        width: 312px;
+        height: 220px;
+    }
+
+    /* 다양한 척추신경 통증에서 해방 */
+    .box02 {
+        width: 100%;
+        background: #F9F9F9;
+        height: auto;
+        min-height: 430px;
+    }
+
+    .txtRow01 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .txtBox04 {
+        width: 648px;
+        height: 80px;
+        background: #315F99;
+        border-radius: 100px;
+        margin-bottom: 20px;
+    }
+
+    .txt04 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+
+    /* 하단로고 */
+    .img13 {
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img05_6.png") no-repeat center center;
+        background-size: cover;
+        width: 353px;
+        height: 176px;
+    }
+
+    /* <!-- tab2_고주파수핵성형술 --> */
+    .imgBox02_1{
+        width: 1028px;
+        height: auto;
+        display: flex;
+        justify-content: space-around
+    }
+    .img02_1{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_12.png") no-repeat center center;
+        background-size: cover;
+        width: 220px;
+        height: 125px;
+    }
+    .txt02_1{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #464646;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* txt */
+    .box02_1{
+        background: #f9f9f9;
+        width: 100%;
+        height: auto;
+        min-height: 148px;
+    }
+    .txtBox02_1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 775px;
+    }
+    .txtBox02_2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .txt02_2{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #464646;
+    }
+    /* 시술장면 */
+    .box02_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt02_3{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: -0.02em;
+        color: #315F99;
+    }
+    .imgBox02_2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .imgBox02_3{
+        width: 424px;
+    }
+    .img02_2{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_13.png") no-repeat center center;
+        background-size: cover;
+        width: 424px;
+        height: 230px;
+    }
+    .img02_3{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_14.png") no-repeat center center;
+        background-size: cover;
+        width: 424px;
+        height: 230px;
+    }
+    .txtBox02_3{
+        height: 80px;
+        background: rgba(49, 95, 153, 0.1);
+        /* background: #315F99; */
+        border-radius: 0px 0px 10px 10px;
+    }
+    .txt02_4{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #315F99;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* 수핵감압술의 효과 */
+    .box02_3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f9f9f9;
+    }
+    .img02_4{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_15.png") no-repeat center center;
+        background-size: cover;
+        width: 312px;
+        height: 312px;
+    }
+    .img02_5{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_16.png") no-repeat center center;
+        background-size: cover;
+        width: 312px;
+        height: 312px;
+    }
+    .img02_6{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_19.png") no-repeat center center;
+        background-size: cover;
+        width: 20px;
+        height: 40px;
+    }
+    .txt02_5{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #6A6A6A;
+    }
+    .txtBox02_4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 34px;
+    }
+    .imgBox02_4{
+        height: 312px;
+        display: flex;
+        align-items: center;
+        margin: 0 58px;
+    }
+    .img02_7{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_18.png") no-repeat center center;
+        background-size: 101% 101%;
+        width: 401px;
+        height: 401px;
+    }
+    /* L’DISQ 수핵감압술 시술 대상자 */
+    .box02_4{
+        width: 100%;
+        height: auto;
+        min-height: 552px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .txtBox02_5{
+        z-index: 2;
+        margin-left: 12%;
+    }
+    .img02_8{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_17.png") no-repeat center center;
+        background-size: cover;
+        width: 896px;
+        height: 552px;
+        position: absolute;
+        right: 0;
+    }
+    .imgBox02_5{
+        display: flex;
+        align-items: center;
+    }
+    .txt02_6{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #315F99;
+    }
+    /* L’DISQ 수핵감압술의 장점 */
+    .box02_5{
+        /* width: 1320px; */
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img02_9{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_20.png") no-repeat center center;
+        background-size: cover;
+        width: 424px;
+        height: 272px;
+    }
+    .img02_10{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_21.png") no-repeat center center;
+        background-size: cover;
+        width: 424px;
+        height: 272px;
+    }
+    .img02_11{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_22.png") no-repeat center center;
+        background-size: cover;
+        width: 424px;
+        height: 272px;
+    }
+    .imgBox02_6{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .txtBox02_6{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    /* EBS ‘명의’ */
+    .img02_12{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_23.png") no-repeat center center;
+        background-size: cover;
+        width: 580px;
+        height: 370px;
+    }
+    .img02_13{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_24.png") no-repeat center center;
+        background-size: cover;
+        width: 580px;
+        height: 370px;
+    }
+    /* <!-- tab3_경막외강내시경신경성형술 --> */
+    /* 경막외강내시경신경성형술 */
+    .img02_14{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_26.png") no-repeat center center;
+        background-size: cover;
+        width: 898px;
+        height: 232px;
+    }
+    /* <!-- 다양한 척추신경 통증에서 해방 --> */
+    .box03_1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .img02_15{
+        background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img06_25.png") no-repeat center center;
+        background-size: cover;
+        width: 760px;
+        height: 274px;
+    }
+    .imgBox03_1{
+        display: flex;
+        align-items: center;
+        padding-bottom: 12px;
+    }
+    .txt03_1{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #464646;
+        padding-left: 20px;
+    }
+
+    @media screen and (max-width : 578px ) {
+        ul.tabs{
+            width : 100%;
+        }
+
+        ul.tabs li {
+            width : 100%;
+            font-size: 18px;
+            padding : 18px;
+        }
+        
+        .tab-content > div {
+            width : 100%;
+        }
+
+        .txt02{
+            text-align: center;
+        }
+
+        .img01{
+            width : 100%;
+            background-size : contain;
+        }
+
+        .txt03 {
+            font-size : 16px;
+            padding: 10px;
+        }
+
+        
+        .img03 {
+            background: url(https://leemedical.s3.ap-northeast-1.amazonaws.com/23img01_3.png) no-repeat center center;
+            background-size: cover;
+            width: 24px;
+            height: 8px;
+        }
+
+        .img03.leftDot{
+            margin-top : 40px;
+            margin-bottom : 40px;
+        }
+            
+        .img03.centerDot{
+            margin-left : auto;
+            margin-right : auto;
+            margin-top : 40px;
+            margin-bottom : 40px;
+        }
+
+        .imgBox02 {
+            justify-content: center;
+        }
+
+        .txt04{
+            font-size : 16px;
+        }
+
+        .imgBox02_1{
+            width : 100%;
+            display : block;
+        }
+
+        .img02_1{
+            margin : 0 auto;
+            width : 300px;
+            height : 170px;
+        }
+        .txt02_1{
+            font-size : 16px;
+            margin-top : 20px;
+        }
+
+        .txtBox02_1 > div:first-child{
+            margin-right: 20px;
+            margin-left: 20px;            
+        }
+        .txt02_2{
+            font-size : 14px;
+            line-height: 18px;
+        }
+
+        .imgBox02_4{
+            transform : rotate(90deg);
+            height : 100px;
+        }
+
+        .txtBox02_5{
+            margin : 0 auto;
+        }
+
+        .img02_8{
+            width : 100%;
+        }
+
+        .txtBox02_6{
+            padding-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        .imgBox02_2{
+            width : 100%;            
+        }
+        .img02_12, .img02_13{
+            width: 100%;
+            height: 222px;
+            margin-bottom: 10px;
+        }
+
+        .img02_14{
+            width: 100%;
+            height: 92px;
+        }
+
+        .img02_15{
+            width : 100%;
+            height : 150px;
+        }
+
+        .hp_mt290{
+            margin-top : 100px;
+        }
+    }
+
+</style>
+
+<!-- subMainImg -->
+    <div class="subMain_wrapper subMain_img" style="margin-top: 20px;"></div>
+
+<div class="subTtl_wrapper hp_pt31">
+    <div class="subTtl_txt01">치료법&적응증<span class="subTtl_txt02 hp_pr10 hp_pl10">></span><span
+            class="subTtl_txt02">시술</span></div>
+</div>
+
+<!-- 시술 -->
+<div class="subTtl_wrapper02">
+    <div class="subTtl_txt03">시술</div>
+</div>
+
+<!-- tabBox -->
+<!-- tab1_경피적경막외강신경성형술(추간공확장수술포함) -->
+<div class="tabBox01">
+    <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1">경피적경막외강신경성형술(추간공확장수술포함)</li>
+        <li class="tab-link " data-tab="tab-2">고주파수핵성형술</li>
+        <li class="tab-link " data-tab="tab-3">경막외강내시경신경성형술</li>
+    </ul>
+    <div id="tab-1" class="tab-content current">
+        <!-- 비수술 -->
+        <div class="imgBox01" style="padding-top: 90px;">
+            <div class="img03"></div>
+            <div class="txt01" style="padding: 55px 0 10px;">비수술 척추관협착증 치료</div>
+            <div class="txt02">경피적경막외강신경성형술(추간공확장수술포함)</div>
+            <div class="img01" style="margin: 60px 0 40px;"></div>
+        </div>
+        <!-- 텍스트 -->
+        <div class="txtBox01">
+            <div class="txt03">
+                <strong>추간공에 특수제작 키트(특허 보유)</strong>를 삽입,<br>
+                불필요하게 비후된 인대를 뼈의 손상없이 박리하여 염증을 제거하고 신경의 통로를 확보합니다.<br>
+                <strong>신경압박이나 유착을 직접 제거하고 확장된 추간공에 약물을 주입</strong>시켜 <strong>다리통증, 감각이상을 해결</strong>해줍니다.
+            </div>
+        </div>
+        <!-- 척추협착 풍선확장술의 대상 -->
+        <div class="box01" style="padding-top: 90px;">
+            <div class="img03 centerDot"></div>
+            <div class="txt02" style="padding: 40px 0 60px;">척추협착 풍선확장술의 대상</div>
+            <div class="imgBox02">
+                <div class="imgBox03">
+                    <div class="img02"></div>
+                    <div class="txtBox02" style="padding: 30px 0;">
+                        <div class="img04"></div>
+                        <div class="txt03" style="padding-left: 20px;">척추통증 발생기전</div>
+                    </div>
+                </div>
+                <div class="imgBox03">
+                    <div class="img10"></div>
+                    <div class="txtBox02" style="padding: 20px 0;">
+                        <div class="img05"></div>
+                        <div class="txt03" style="padding-left: 20px;">시술 전, 신경유착을 보이는<br>추간공협착상태</div>
+                    </div>
+                </div>
+                <div class="imgBox03">
+                    <div class="img11"></div>
+                    <div class="txtBox02" style="padding: 20px 0;">
+                        <div class="img06"></div>
+                        <div class="txt03" style="padding-left: 20px;">시술 후, 협착이 해결된<br>추간공 상태</div>
+                    </div>
+                </div>
+                <div class="imgBox03">
+                    <div class="img12"></div>
+                    <div class="txtBox02" style="padding: 20px 0;">
+                        <div class="img07"></div>
+                        <div class="txt03" style="padding-left: 20px;">추간공 확장술 후<br>회복된 염증치료 상태</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 다양한 척추신경 통증에서 해방 -->
+        <div class="box02" style="margin-top: 100px;">
+            <div style="max-width: 1320px; margin: auto;">
+                <div style="display: flex; flex-direction: column; align-items: center; padding-top: 50px;">
+                    <div class="img03 centerDot"></div>
+                    <div class="txt02" style="padding: 40px 0 60px;">다양한 척추신경 통증에서 해방</div>
+                </div>
+                <div class="">
+                    <div class="txtRow01">
+                        <div class="txtBox04">
+                            <div class="txt04"><strong>척추관 협착증</strong>에 따른&nbsp;<strong>허리통증과 하지 통증</strong></div>
+                        </div>
+                        <div class="txtBox04">
+                            <div class="txt04"><strong>좌골 신경통</strong>에 따른&nbsp;<strong>엉치 및 하지 통증</strong></div>
+                        </div>
+                    </div>
+                    <div class="txtRow01">
+                        <div class="txtBox04">
+                            <div class="txt04"><strong>척추 수술 후 추간공 문제</strong>로 지속되는&nbsp;<strong>허리 통증</strong></div>
+                        </div>
+                        <div class="txtBox04">
+                            <div class="txt04"><strong>고령 환자 또는 다분절</strong>&nbsp;등의 문제로 수술이 불가능한 경우</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 하단 로고 -->
+        <div style="margin: 160px 0 130px;">
+            <div class="img13 hp_mAuto"></div>
+        </div>
+    </div>
+
+    <!-- tab2_고주파수핵성형술 -->
+    <div id="tab-2" class="tab-content">
+        <div class="imgBox01" style="padding-top: 90px;">
+            <!-- 비수술 척추 디스크 치료법 -->
+            <div class="img03"></div>
+            <div class="txt01" style="padding: 55px 0 10px;">비수술 척추 디스크 치료법</div>
+            <div class="txt02">고주파수핵성형술</div>
+            <div class="" style="margin: 60px 0 40px;">
+                <div class="imgBox02_1">
+                    <div class="img02_1"></div>
+                    <div class="txt02_1">
+                        <div>L’DISQ는 방향제어가 가능한 수핵감압술치료기기로,</div>
+                        <div>병변 부위만을 정확하게 치료하여 주변 조직의 손상을 최소화하여 돌출된 디스크부위를 치료하며</div>
+                        <div>비수술적인 방법으로 <span style="color: #315F99; font-weight: 700;">당일치료, 당일퇴원이 가능</span>한 치료법 입니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- txt -->
+        <div class="box02_1 txtBox02_2">
+            <div class="txtBox02_1">
+                <div class="txt02_2" style="color: #315F99; font-weight: 700;">시술방법</div>
+                <div class="txt02_2">피부 절개 없이 가는 관을 삽입하고 고주파열 에너지를 디스크 병변 부위에 쏘여<br>통증을 유발하는 부분만 제거하는 치료법입니다.</div>
+            </div>
+        </div>
+        <!-- 시술장면 -->
+        <div class="box02_2" style="padding: 60px 0 100px;">
+            <div class="img03"></div>
+            <div class="txt02_3" style="padding: 50px 0; font-weight: 700;">시술장면</div>
+            <div class="imgBox02_2">
+                <div class="imgBox02_3 hp_mr24">
+                    <div class="img02_2"></div>
+                    <div class="txtBox02_3">
+                        <div class="txt02_4">경추(목) 수핵감압술</div>
+                    </div>
+                </div>
+                <div class="imgBox02_3 hp_mr24">
+                    <div class="img02_3"></div>
+                    <div class="txtBox02_3">
+                        <div class="txt02_4">요추(허리) 수핵감압술</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 수핵감압술의 효과 -->
+        <div class="box02_3" style="padding: 60px 0;">
+            <div class="img03"></div>
+            <div class="txt02_3" style="padding: 50px 0; font-weight: 700;">수핵감압술의 효과</div>
+            <div class="imgBox02_2">
+                <div class="">
+                    <div class="img02_4"></div>
+                    <div class="txtBox02_4">
+                        <div class="txt02_5" style="color: #315F99; padding-bottom: 10px;">수핵감압술 전</div>
+                        <div class="txt02_5">탈출되어 신경을 압박하고 있는 디스크</div>
+                    </div>
+                </div>
+                <div class="imgBox02_4">
+                    <div class="img02_6"></div>
+                </div>
+                <div class="">
+                    <div class="img02_5"></div>
+                    <div class="txtBox02_4">
+                        <div class="txt02_5" style="color: #315F99; padding-bottom: 10px;">수핵감압술 후</div>
+                        <div class="txt02_5">정상 회복된 탈출 부위</div>
+                    </div>
+                </div>
+            </div>
+            <div class="" style="width: 1320px; display: flex; flex-direction: row-reverse; margin: -550px 0 150px;">
+                <div class="img02_7"></div>
+            </div>
+        </div>
+        <!-- L’DISQ 수핵감압술 시술 대상자 -->
+        <div class="box02_4">
+            <div class="txtBox02_5">
+                <div class="img03"></div>
+                <div class="txt02_6" style="padding: 40px 0 50px;">L’DISQ 수핵감압술 시술 대상자</div>
+                <div class="imgBox02_5" style="padding-bottom: 12px;">
+                    <div class="img04"></div>
+                    <div class="txt02_2" style="padding-left: 20px;">허리, 목 통증, 팔 다리 저림 증상이 있는 환자</div>
+                </div>
+                <div class="imgBox02_5" style="padding-bottom: 12px;">
+                    <div class="img05"></div>
+                    <div class="txt02_2" style="padding-left: 20px;">엉치 또는 허벅지, 종아리, 손발이 저리거나 아픈 환자</div>
+                </div>
+                <div class="imgBox02_5" style="padding-bottom: 12px;">
+                    <div class="img06"></div>
+                    <div class="txt02_2" style="padding-left: 20px;">보존적인 치료가 되지 않는 만성 요통 환자</div>
+                </div>
+                <div class="imgBox02_5" style="padding-bottom: 12px;">
+                    <div class="img07"></div>
+                    <div class="txt02_2" style="padding-left: 20px;">신경주사나 신경치료 후 효과가 오래 지속되지 않는 환자</div>
+                </div>
+                <div class="imgBox02_5" style="padding-bottom: 12px;">
+                    <div class="img08"></div>
+                    <div class="txt02_2" style="padding-left: 20px;">단기간의 회복을 원하거나 타 질병이 있는 환자</div>
+                </div>
+            </div>
+            <div class="img02_8"></div>
+        </div>
+        <!-- L’DISQ 수핵감압술의 장점 -->
+        <div class="box02_5" style="padding: 90px 0 100px;">
+            <div class="img03"></div>
+            <div class="txt02_6" style="padding: 50px 0;">L’DISQ 수핵감압술의 장점</div>
+            <div class="imgBox02_6">
+                <div class="imgBox02_3 hp_mr24">
+                    <div class="img02_9"></div>
+                    <div class="txtBox02_3">
+                        <div class="txt02_4">간편한 시술</div>
+                    </div>
+                    <div class="txtBox02_6">
+                        <div class="txt02_2" style="color: #6A6A6A !important;">비수술적 치료법으로</div>
+                        <div class="txt02_2" style="color: #6A6A6A !important;">30~40분 정도의 짧은 시술시간</div>
+                    </div>
+                </div>
+                <div class="imgBox02_3 hp_mr24">
+                    <div class="img02_10"></div>
+                    <div class="txtBox02_3">
+                        <div class="txt02_4">빠른 회복</div>
+                    </div>
+                    <div class="txtBox02_6">
+                        <div class="txt02_2" style="color: #6A6A6A !important;">당일 퇴원 및</div>
+                        <div class="txt02_2" style="color: #6A6A6A !important;">빠른 일상 복귀 가능</div>
+                    </div>
+                </div>
+                <div class="imgBox02_3 hp_mr24">
+                    <div class="img02_11"></div>
+                    <div class="txtBox02_3">
+                        <div class="txt02_4">손상 최소화</div>
+                    </div>
+                    <div class="txtBox02_6">
+                        <div class="txt02_2" style="color: #6A6A6A !important;">절개 없이 국소 마취로 진행하여</div>
+                        <div class="txt02_2" style="color: #6A6A6A !important;">손상 및 흉터 최소화</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- EBS ‘명의’ -->
+        <div class="box02_2" style="padding: 60px 0 100px; background: #f9f9f9;">
+            <div class="img03"></div>
+            <div class="txt02_6" style="padding: 50px 0;">EBS ‘명의’</div>
+            <div class="imgBox02_2">
+                <div class="img02_12" style="margin-right: 10px;"></div>
+                <div class="img02_13" style="margin-right: 10px;"></div>
+            </div>
+        </div>
+        <div style="margin: 160px 0 130px;">
+            <div class="img13 hp_mAuto"></div>
+        </div>
+
+    </div>
+
+    <!-- tab3_경막외강내시경신경성형술 -->
+    <div id="tab-3" class="tab-content">
+        <!-- 경막외강내시경신경성형술 -->
+        <div class="imgBox01" style="padding-top: 90px;">
+            <div class="img03"></div>
+            <div class="txt02" style="padding: 55px 0 10px;">경막외강내시경신경성형술</div>
+            <div class="img02_14" style="margin: 60px 0 40px;"></div>
+        </div>
+        <!-- 텍스트 -->
+        <div class="box02_1 txtBox02_2">
+            <div class="txtBox02_1">
+                <div class="txt02_2" style="color: #315F99; font-weight: 700;">시술방법</div>
+                <div class="txt02_2">꼬리뼈 부위에 국소 마취를 한 뒤 내시경을 삽입하여 통증이 발생한 부위를 관찰하면서<br>경막외강내 유착을 용해시키고 신경염증 감소를 통한 디스크 감압으로 치료 합니다.</div>
+            </div>
+        </div>
+        <!-- 다양한 척추신경 통증에서 해방 -->
+        <div class="box01" style="padding-top: 90px;">
+            <div class="img03"></div>
+            <div class="txt02" style="padding: 40px 0 60px;">다양한 척추신경 통증에서 해방</div>
+            <div class="box03_1">
+                <div class="img02_15"></div>
+                <div class="txtBox02_7">
+                    <div class="imgBox03_1">
+                        <div class="img04"></div>
+                        <div class="txt03_1"><strong>허리 디스크</strong> 환자</div>
+                    </div>
+                    <div class="imgBox03_1">
+                        <div class="img05"></div>
+                        <div class="txt03_1"><strong>급만성 허리 통증</strong> 환자</div>
+                    </div>
+                    <div class="imgBox03_1">
+                        <div class="img06"></div>
+                        <div class="txt03_1">MRI 검사로도 <strong>원인 불명의 증상</strong> 이 있는 환자</div>
+                    </div>
+                    <div class="imgBox03_1">
+                        <div class="img07"></div>
+                        <div class="txt03_1"><strong>척추관 협착증</strong> 환자</div>
+                    </div>
+                    <div class="imgBox03_1">
+                        <div class="img08"></div>
+                        <div class="txt03_1">다리가 저리는 <strong>좌골 신경통 환자</strong> 환자</div>
+                    </div>
+                    <div class="imgBox03_1">
+                        <div class="img09"></div>
+                        <div class="txt03_1">허리 <strong>수술 후에도 통증을 호소하는</strong> 환자</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 시술의 장점 -->
+        <div class="box02" style="margin-top: 100px;">
+            <div style="max-width: 1320px; margin: auto;">
+                <div style="display: flex; flex-direction: column; align-items: center; padding-top: 50px;">
+                    <div class="img03"></div>
+                    <div class="txt02" style="padding: 40px 0 60px;">시술의 장점</div>
+                </div>
+                <div class="">
+                    <div class="txtRow01">
+                        <div class="txtBox04">
+                            <div class="txt04">국소 마취로&nbsp;<strong>노약자, 당뇨병, 고혈압 환자에게도 시술가능</strong></div>
+                        </div>
+                        <div class="txtBox04">
+                            <div class="txt04"><strong>비수술적 방법</strong>으로 흉터나 상처가 남지않음</div>
+                        </div>
+                    </div>
+                    <div class="txtRow01">
+                        <div class="txtBox04">
+                            <div class="txt04">출혈이 없어 수혈이 필요하지 않아&nbsp;<strong>합병증으로부터 안전</strong></div>
+                        </div>
+                        <div class="txtBox04">
+                            <div class="txt04"><strong>짧은 시술시간, 빠른 회복</strong>으로 당일 치료 가능</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 하단 로고 -->
+        <div style="margin: 160px 0 130px;">
+            <div class="img13 hp_mAuto"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class=""></div>
+<div class="hp_mt290"></div>
+
+<script>
+$(document).ready(function () {
+    $('ul.tabs li').click(function(){
+        let idTab = $(this).attr('data-tab');
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+        $(this).addClass('current');
+        $("#"+idTab).addClass('current');
+    }
+    );
+
+        let idTab = getParamFromUrl('idTab');
+    if(idTab == undefined) idTab = 1;
+
+    $('ul.tabs li:nth-child('+idTab+')').trigger('click');
+});
+
+let getParamFromUrl = (key) => {
+    let search = location.search.substring(1);
+    let object = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+    let param = object[key];
+    return param;
+};
+
+</script>
