@@ -1,0 +1,707 @@
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://leemedical.s3.ap-northeast-1.amazonaws.com/common.css">
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <title>Main</title>
+
+
+    <style>
+        /* 상단 css */
+        /* navbar */
+        .navWrapper {
+            width: 100%;
+            height: 140px;
+            max-height: 140px;
+            flex-wrap: wrap;
+            padding-bottom: 0;
+            /*  */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: #fff;
+        }
+
+        .navLogoImg {
+            background: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/mainLogo.png") no-repeat center center;
+            background-size: cover;
+            width: 208px;
+            height: 60px;
+            max-width: 208px;
+            max-height: 60px;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .navTxt {
+            font-size: 16px !important;
+            font-weight: 400 !important;
+            line-height: 24px !important;
+            color: #000 !important;
+            letter-spacing: -0.02em !important;
+            width: 100px;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            text-align: center;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .navBtn {
+            display: flex;
+            width: 190px;
+            height: 40px;
+            background: #F5F5F5;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navTxt02 {
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            line-height: 20px !important;
+            color: #6A6A6A !important;
+            letter-spacing: -0.02em !important;
+            text-align: center;
+        }
+
+        .navTxt02:hover {
+            color: #0056b3 !important;
+        }
+
+        .navLine {
+            background: #e6e6e6;
+            width: 2px;
+            height: 14px;
+            margin: auto 24px;
+        }
+
+        .bl_len a {
+            color: #6A6A6A !important;
+        }
+
+        .bl_len a:hover {
+            color: #0056b3 !important;
+        }
+
+
+        /* navSub */
+        .navSub_Wrapper {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            z-index: 100;
+            padding-top: 148px;
+            background: #fff;
+        }
+
+        .navSub_Inner {
+            width: 100%;
+            /* max-width: 1920px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 0 16px 8px 16px;
+        }
+
+        .un_logoSpace {
+            width: 208px;
+            max-width: 208px;
+            margin-right: 16px;
+        }
+
+        .a {
+            float: right !important;
+            display: flex;
+            width: 844px;
+        }
+
+        .navSub_txt01 {
+            color: #6A6A6A !important;
+            text-align: center;
+        }
+
+        .navSub_row {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+        }
+
+        .navSub_txt01:hover {
+            color: #4AA3B9 !important;
+            text-decoration: none;
+        }
+
+        .navTxt:hover {
+            color: #315F99 !important;
+            font-weight: 700 !important;
+        }
+
+        /* sidebar */
+        .sidebarWrapper {
+            width: 140px;
+            height: 620px;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 80px;
+            top: 30%;
+            z-index: 99;
+        }
+
+        .sidebarBox {
+            display: flex;
+        }
+
+        .sidebarImg{
+            background-size: 100% 100%;
+            background-position: center;
+            /* background: white;
+            border : #315F99 5px solid; */
+            width: 140px;
+            height: 140px;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+        }
+        .sidebarImg01 {
+            background-image: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img04_3.png");
+        }
+
+        .sidebarImg02 {
+            background-image: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img04_4.png");
+        }
+
+        .sidebarImg03 {
+            background-image: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img04_5.png");
+        }
+
+        .sidebarImg04 {
+            background-image: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img04_6.png");
+        }
+        .sidebarImg01:hover {
+            background-image: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img04_3_hover.png");
+        }
+
+        .sidebarImg02:hover {
+            background-image: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img04_4_hover.png");
+        }
+
+        .sidebarImg03:hover {
+            background-image: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img04_5_hover.png");
+        }
+
+        .sidebarImg04:hover {
+            background-image: url("https://leemedical.s3.ap-northeast-1.amazonaws.com/23img04_6_hover.png");
+        }        
+
+      /* 상단 모바일 */
+        .menu-trigger {
+            display: none;
+        }
+
+        .mNavBox {
+            width: 100%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-trigger {
+            margin-right: 50px;
+        }
+
+        .menu-trigger,
+        .menu-trigger span {
+            display: inline-block;
+            transition: all .4s;
+            box-sizing: border-box;
+        }
+
+        .menu-trigger {
+            position: relative;
+            width: 30px;
+            height: 24px;
+        }
+
+        .menu-trigger span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+            border-radius: 4px;
+        }
+
+        .menu-trigger span:nth-of-type(1) {
+            top: 0;
+        }
+
+        .menu-trigger span:nth-of-type(2) {
+            top: 10px;
+        }
+
+        .menu-trigger span:nth-of-type(3) {
+            bottom: 0;
+        }
+
+        /* type-01 */
+        /* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
+        .menu-trigger.active-1 span:nth-of-type(1) {
+            -webkit-transform: translateY (10px) rotate (-45deg);
+            transform: translateY(10px) rotate(-45deg);
+        }
+
+        .menu-trigger.active-1 span:nth-of-type(2) {
+            opacity: 0;
+        }
+
+        .menu-trigger.active-1 span:nth-of-type(3) {
+            -webkit-transform: translateY(-10px) rotate(45deg);
+            transform: translateY(-10px) rotate(45deg);
+        }
+
+        .mNavBox02 {
+            width: 100%;
+            max-width: 500px;
+            background: #fff;
+            /* background-color: rgba(224, 224, 224, 0.8); */
+            height: 420px;
+            display: none;
+            position: fixed;
+            z-index: 99;
+            right: 0;
+        }
+
+        .mNavBox02Show {
+            display: block;
+        }
+
+        .dropdown-item {
+            width: auto;
+        }
+
+        .dropdown-item:hover {
+            color: #4AA3B9;
+        }
+
+
+        /* tablet */
+        @media screen and (max-width:1200px) {
+
+            .navbar {
+                display: none;
+            }
+
+            .menu-trigger {
+                display: block;
+            }
+            .sidebarWrapper{
+                right : 20px;
+                width : 60px;
+                top : 50%;
+            }
+
+            .sidebarImg{
+                width : 60px;
+                height : 60px;
+                background-repeat: no-repeat;
+            }
+        }
+
+
+        /* mobile */
+        @media screen and (max-width:578px) {}
+      body{
+            padding-top: 20px;
+        }
+    </style>
+
+
+    <!-- 상단 html -->
+    <nav class="navbar navbar-expand-sm hp_jc_spaceE navWrapper">
+        <!-- Brand -->
+        <a class="navbar-brand navLogoImg" href="/?63f478de46ce3"></a>
+
+        <!-- Links -->
+        <div class="hp_flexD_col">
+            <ul class="navbar-nav hp_jc_flexE hp_mb10">
+                <div class="navBtn hp_mr27">
+                    <li class="nav-item">
+                        <a class="nav-link navTxt02" href="/memb/memb.add.php">회원가입</a>
+                    </li>
+                    <div class="navLine"></div>
+                    <li class="nav-item">
+                        <a class="nav-link navTxt02" href="/log/log.php">로그인</a>
+                    </li>
+                </div>
+                <li class="nav-item bl_len">
+                    <a class="nav-link" href="#">KOREA</a>
+                </li>
+                <!--
+                <div class="navLine"></div>
+                <li class="nav-item bl_len">
+                    <a class="nav-link" href="#">ENGLISH</a>
+                </li>
+                <div class="navLine"></div>
+                <li class="nav-item bl_len">
+                    <a class="nav-link" href="#">CHINESE</a>
+                </li>
+				-->
+            </ul>
+
+            <ul class="navbar-nav navHover">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown hp_mr24">
+                    <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown">
+                        의원소개
+                    </a>
+                    <!-- <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">병원장 인사말</a>
+                        <a class="dropdown-item" href="#">병원 둘러보기</a>
+                        <a class="dropdown-item" href="#">병원비전&CI</a>
+                        <a class="dropdown-item" href="#">오시는 길</a>
+                    </div> -->
+                </li>
+                <li class="nav-item dropdown hp_mr24">
+                    <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown">
+                        병원장 스토리
+                    </a>
+                    <!-- <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">학력&약력</a>
+                        <a class="dropdown-item" href="#">방송보도</a>
+                        <a class="dropdown-item" href="#">언론보도</a>
+                        <a class="dropdown-item" href="#">국내&해외강연</a>
+                        <a class="dropdown-item" href="#">연구논문</a>
+                        <a class="dropdown-item" href="#">학술활동</a>
+                        <a class="dropdown-item" href="#">이수증&표창장</a>
+                    </div> -->
+                </li>
+                <li class="nav-item dropdown hp_mr24">
+                    <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown">
+                        부위별 질환
+                    </a>
+                    <!-- <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">척추</a>
+                        <a class="dropdown-item" href="#">관절</a>
+                        <a class="dropdown-item" href="#">대상포진</a>
+                        <a class="dropdown-item" href="#">기타통증</a>
+                    </div> -->
+                </li>
+                <li class="nav-item dropdown hp_mr24">
+                    <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown">
+                        치료법&적응중
+                    </a>
+                    <!-- <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">시술</a>
+                        <a class="dropdown-item" href="#">주요 치료</a>
+                    </div> -->
+                </li>
+                <li class="nav-item dropdown hp_mr24">
+                    <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown">
+                        진료 안내
+                    </a>
+                    <!-- <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">진료 절차</a>
+                        <a class="dropdown-item" href="#">진료일정표</a>
+                        <a class="dropdown-item" href="#">시술전&후 가이드</a>
+                        <a class="dropdown-item" href="#">증명서 발급</a>
+                        <a class="dropdown-item" href="#">비급여항목</a>
+                    </div> -->
+                </li>
+                <li class="nav-item dropdown hp_mr24">
+                    <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown">
+                        알림공간
+                    </a>
+                    <!-- <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">홍보</a>
+                        <a class="dropdown-item" href="#">유튜브</a>
+                        <a class="dropdown-item" href="#">공지사항</a>
+                        <a class="dropdown-item" href="#">직원게시판</a>
+                    </div> -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown">
+                        고객센터
+                    </a>
+                    <!-- <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">예약</a>
+                        <a class="dropdown-item" href="#">FAQ</a>
+                        <a class="dropdown-item" href="#">QNA</a>
+                        <a class="dropdown-item" href="#">채용정보</a>
+                    </div> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navSub -->
+    <div class="navSub_Wrapper" id="navSub_Wrapper" style="display: none;">
+        <div class="navSub_Inner">
+            <div class="un_logoSpace"></div>
+            <div class="a">
+                <div class="navSub_row hp_mr24">
+                    <a href="/page/?M2_IDX=20153" class="navSub_txt01 hp_pb20">병원장 인사말</a>
+                    <a href="/page/?M2_IDX=28166" class="navSub_txt01 hp_pb20">병원 둘러보기</a>
+                    <a href="/page/?M2_IDX=26851" class="navSub_txt01 hp_pb20">병원비전&CI</a>
+                    <a href="/page/?M2_IDX=27345" class="navSub_txt01">오시는 길</a>
+                </div>
+                <div class="navSub_row hp_mr24">
+                    <a href="/page/?M2_IDX=25797" class="navSub_txt01 hp_pb20">학력&약력</a>
+                    <a href="/board/list.php?M2_IDX=26853" class="navSub_txt01 hp_pb20">방송보도</a>
+                    <a href="/board/list.php?M2_IDX=26854" class="navSub_txt01 hp_pb20">언론보도</a>
+                    <a href="/board/list.php?M2_IDX=26855" class="navSub_txt01 hp_pb20">국내&해외강연</a>
+                    <a href="/board/list.php?M2_IDX=26856" class="navSub_txt01 hp_pb20">연구논문</a>
+                    <a href="/board/list.php?M2_IDX=26857" class="navSub_txt01 hp_pb20">학술활동</a>
+                    <a href="/board/list.php?M2_IDX=26858" class="navSub_txt01">이수증&표창장</a>
+                </div>
+                <div class="navSub_row hp_mr24">
+                    <a href="/page/?M2_IDX=25796" class="navSub_txt01 hp_pb20">척추</a>
+                    <a href="/page/?M2_IDX=26832" class="navSub_txt01 hp_pb20">관절</a>
+                    <a href="/page/?M2_IDX=26833" class="navSub_txt01">기타통증</a>
+                </div>
+                <div class="navSub_row hp_mr24">
+                    <a href="/page/?M2_IDX=25795" class="navSub_txt01 hp_pb20">시술</a>
+                    <a href="/page/?M2_IDX=27461" class="navSub_txt01 hp_pb20">대상포진</a>
+                    <a href="/page/?M2_IDX=28393" class="navSub_txt01 hp_pb20">안면신경마비<br>(구안와사)</a>
+                    <a href="/page/?M2_IDX=26827" class="navSub_txt01">주요 치료</a>
+                </div>
+                <div class="navSub_row hp_mr24">
+                    <a href="/page/?M2_IDX=26819" class="navSub_txt01 hp_pb20">진료 절차</a>
+                    <a href="/page/?M2_IDX=26820" class="navSub_txt01 hp_pb20">진료일정표</a>
+                    <a href="/page/?M2_IDX=26821" class="navSub_txt01 hp_pb20">시술전&후<br>가이드</a>
+                    <a href="/page/?M2_IDX=26822" class="navSub_txt01 hp_pb20">증명서 발급</a>
+                    <a href="/page/?M2_IDX=26823" class="navSub_txt01">비급여항목</a>
+                </div>
+                <div class="navSub_row hp_mr24">
+                    <a href="/board/list.php?M2_IDX=26814" class="navSub_txt01 hp_pb20">홍보</a>
+                    <a href="https://www.youtube.com/channel/UCOBDeEZynkpaTZobv0ZIHmA"
+                        class="navSub_txt01 hp_pb20">유튜브</a>
+                    <a href="/board/list.php?M2_IDX=26817" class="navSub_txt01 hp_pb20">공지사항</a>
+                    <a href="/board/list.php?M2_IDX=26818" class="navSub_txt01">직원게시판</a>
+                </div>
+                <div class="navSub_row">
+                    <a href="/form/add.php?M2_IDX=28262" class="navSub_txt01 hp_pb20">예약</a>
+                    <a href="/board/list.php?M2_IDX=26811" class="navSub_txt01 hp_pb20">FAQ</a>
+                    <a href="/board/list.php?M2_IDX=26812" class="navSub_txt01 hp_pb20">QNA</a>
+                    <a href="/board/list.php?M2_IDX=28167" class="navSub_txt01">채용정보</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebarWrapper">
+        <a href="tel:0269568575" class="sidebarBox hp_mb20 hp_curser">
+            <div class="sidebarImg sidebarImg01 hp_mAuto"></div>
+        </a>
+        <a href="#" class="sidebarBox hp_mb20 hp_curser">
+            <div class="sidebarImg sidebarImg02 hp_mAuto"></div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCOBDeEZynkpaTZobv0ZIHmA" class="sidebarBox hp_curser hp_mb20">
+            <div class="sidebarImg sidebarImg03 hp_mAuto"></div>
+        </a>
+        <a href="/form/add.php?M2_IDX=28262" class="sidebarBox hp_curser">
+            <div class="sidebarImg sidebarImg04 hp_mAuto"></div>
+        </a>
+    </div>
+
+    <!-- 상단 모바일 -->
+    <div class="mNavBox">
+        <a class="navbar-brand navLogoImg" href="/?63f478de46ce3" style="margin-left:20px; width: 180px !important; height: 40px !important; background-size: contain !important;"></a>
+        <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+
+    <div class="mNavBox02">
+        <ul class="navbar-nav hp_jc_flexE hp_mb10">
+            <div class="" style="display: flex; justify-content: center;">
+                <div class="navBtn hp_mr27">
+                    <li class="nav-item">
+                        <a class="nav-link navTxt02" href="/memb/memb.add.php">회원가입</a>
+                    </li>
+                    <div class="navLine"></div>
+                    <li class="nav-item">
+                        <a class="nav-link navTxt02" href="/log/log.php">로그인</a>
+                    </li>
+                </div>
+                <li class="nav-item bl_len">
+                    <a class="nav-link" href="#">KOREA</a>
+                </li>
+            </div>
+        </ul>
+
+        <ul style="display: flex; justify-content: center;">
+            <li class="nav-item dropdown hp_mr24" style="width: 150px;">
+                <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown"
+                    style="width: 100%;">
+                    의원소개
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/page/?M2_IDX=20153">병원장 인사말</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=28166">병원 둘러보기</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=26851">병원비전&CI</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=27345">오시는 길</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown hp_mr24" style="width: 150px;">
+                <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown"
+                    style="width: 100%;">
+                    병원장 스토리
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/page/?M2_IDX=25797">학력&약력</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26853">방송보도</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26854">언론보도</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26855">국내&해외강연</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26856">연구논문</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26857">학술활동</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26858">이수증&표창장</a>
+                </div>
+            </li>
+        </ul>
+
+        <ul style="display: flex; justify-content: center;">
+            <li class="nav-item dropdown hp_mr24" style="width: 150px;">
+                <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown"
+                    style="width: 100%;">
+                    부위별 질환
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/page/?M2_IDX=25796">척추</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=26832">관절</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=26833">기타통증</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown hp_mr24" style="width: 150px;">
+                <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown"
+                    style="width: 100%;">
+                    치료법&적응중
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/page/?M2_IDX=25795">시술</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=27461">대상포진</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=28393">안면신경마비</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=26827">주요 치료</a>
+                </div>
+            </li>
+        </ul>
+
+        <ul style="display: flex; justify-content: center;">
+            <li class="nav-item dropdown hp_mr24" style="width: 150px;">
+                <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown"
+                    style="width: 100%;">
+                    진료 안내
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/page/?M2_IDX=26819">진료 절차</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=26820">진료일정표</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=26821">시술전&후 가이드</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=26822">증명서 발급</a>
+                    <a class="dropdown-item" href="/page/?M2_IDX=26823">비급여항목</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown hp_mr24" style="width: 150px;">
+                <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown"
+                    style="width: 100%;">
+                    알림공간
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26814">홍보</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/channel/UCOBDeEZynkpaTZobv0ZIHmA">유튜브</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26817">공지사항</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26818">직원게시판</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="display: flex; justify-content: center;">
+            <li class="nav-item dropdown hp_mr24" style="width: 150px;">
+                <a class="nav-link dropdown-toggle navTxt" href="#" id="navbardrop" data-toggle="dropdown"
+                    style="width: 100%;">
+                    고객센터
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/form/add.php?M2_IDX=28262">예약</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26811">FAQ</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=26812">QNA</a>
+                    <a class="dropdown-item" href="/board/list.php?M2_IDX=28167">채용정보</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown hp_mr24" style="width: 150px;"></li>
+        </ul>
+
+    </div>
+
+    <!-- /상단 모바일 -->
+    <!-- /상단 html -->
+    
+
+<!-- 상단 js -->
+<script>
+    let _navSub = document.getElementById("navSub_Wrapper");
+    let _mainBar_box = document.getElementsByClassName("mainBar_box");
+    let _mainBar_innner01 = document.getElementsByClassName("mainBar_innner01");
+
+    var height = $(".navSub_Wrapper").height() + 40;
+
+    $(function () {
+        /* nabSub*/
+        if ($(window).width() > 1000) {
+            $('.navHover').hover(function () {
+                _navSub.style.display = "block"
+                $('.navSub_Inner').addClass("test");
+                window.event.pageY;
+            });
+
+            $('.navSub_Inner').mouseleave(function () {
+                $('.navSub_Inner').removeClass("test");
+                _navSub.style.display = 'none';
+            });
+        }
+
+    });
+
+    $(document).ready(function () {
+        $(".mainBar_innner01").mouseover(function () {
+            $(".mainBar_innner01").css("background-color", "#fff");
+        })
+        $(".mainBar_innner01").mouseout(function () {
+            $(".mainBar_innner01").css("background-color", "rgba(255, 255, 255, 0.2)");
+        })
+    })
+  
+    // 모바일 햄버거 버튼
+    var burger = $('.menu-trigger');
+
+    burger.each(function (index) {
+        var $this = $(this);
+
+        $this.on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active-' + (index + 1));
+            $(".mNavBox02").toggleClass("mNavBox02Show");
+        })
+    });
+</script>
+<!-- /상단 js -->
